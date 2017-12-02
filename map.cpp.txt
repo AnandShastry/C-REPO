@@ -1,0 +1,18 @@
+//Simple map find
+#include <iostream>
+#include <unistd.h>
+#include<map>
+using namespace std;
+
+int main()
+{
+	std::map<int,std::string> testMap;
+	testMap[12]="Suzuki";
+	testMap[24]="Honda";
+	//cout << testMap.at(1)<<endl; //This will get compiled, but throw run time error
+	cout << testMap.at(12)<<endl;
+    cout << testMap.find(24)->second<<endl;
+
+
+	return 0;
+}
